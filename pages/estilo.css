@@ -1,16 +1,63 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /*BODY*/
 
 body {
-    background-image: url(./image/fundo-abstrato-do-papel-de-parede-de-fumaca-para-a-area-de-trabalho_53876-128249.jpg);
+background-image: url(../image/5603526_1876.jpg);
+background-position: top center;
+background-size: 100% auto;
+background-repeat: no-repeat;
+background-color: #08012B;
+color: white;
 }
 
+ul {
+    list-style: none;
+}
 
 
 /*HEADER*/
 
+header {
+    max-width: 580px;
+    margin: auto;
+    margin-top: 15px;
+
+}
+
+img.imagem-perfil{
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+/*MAIN*/
+
+main {
+    max-width: 580px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+/*SECTION*/
+
+section{
+    background-color: #f2d5e044;
+    border-top: 2px solid;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    padding: 25px;
+}
+
+section div ul {
+    display: flex;
+}
+
+section div ul li {
+    margin-right: 15px;
+}
 
