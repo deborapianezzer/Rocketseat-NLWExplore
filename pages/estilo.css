@@ -12,7 +12,7 @@ background-position: top center;
 background-size: 100% auto;
 background-repeat: no-repeat;
 background-color: #08012B;
-color: white;
+color: #08012B;
 }
 
 ul {
@@ -23,14 +23,17 @@ ul {
 /*HEADER*/
 
 header {
+    display: flex;
+    justify-content: center;
     max-width: 580px;
     margin: auto;
     margin-top: 15px;
-
 }
 
 img.imagem-perfil{
     border-radius: 50%;
+    border: 2px solid;
+    border-color: #f2d5e044;
     width: 120px;
     height: 120px;
 }
