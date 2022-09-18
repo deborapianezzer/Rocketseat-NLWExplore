@@ -16,9 +16,6 @@ background-color: #08012B;
 color: #08012B;
 }
 
-ul {
-    list-style: none;
-}
 
 
 /*HEADER*/
@@ -49,23 +46,31 @@ main {
 
 /*SECTION*/
 
-section{
+section {
     background-color: #f2d5e044;
     border-top: 2px solid;
     border-radius: 15px;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     padding: 25px;
+}
+
+section p.texto-explicativo {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 section div ul {
     display: flex;
+    list-style: none;
 }
+
 
 section div ul li {
     margin-right: 15px;
 }
 
 section div ul li img {
-   width: 40%;
+   width: 150px;
+   height: 90px;
 }
 
