@@ -1,3 +1,11 @@
+:root {
+    --color-primary-main: #08012B;
+    --color-secundary-main: #f2d5e0;
+    --color-background-main: #08012B;
+    ;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -12,8 +20,8 @@ background-image: url(../image/5603526_1876.jpg);
 background-position: top center;
 background-size: 100% auto;
 background-repeat: no-repeat;
-background-color: #08012B;
-color: #08012B;
+background-color: var(--color-background-main);
+color: var(--color-primary-main);
 }
 
 
@@ -28,10 +36,22 @@ header {
     margin-top: 15px;
 }
 
+header img {
+    transition: transform .3s;
+}
+
+header img {
+    animation: fromTop .6s .4s backwards;
+}
+
+header img:hover {
+    transform: scale(1.1);
+}
+
 img.imagem-perfil{
     border-radius: 50%;
     border: 2px solid;
-    border-color: #f2d5e044;
+    border-color: var(--color-background-main);
     width: 120px;
     height: 120px;
 }
@@ -47,12 +67,16 @@ main {
 /*SECTION*/
 
 section {
-    background-color: #f2d5e044;
+    background-color: var(--color-secundary-main);
+    backdrop-filter: blur (50px);
+    opacity: 85%;
     border-top: 2px solid;
     border-radius: 15px;
     margin-bottom: 20px;
     padding: 25px;
 }
+
+
 
 section p.texto-explicativo {
     margin-top: 10px;
@@ -67,6 +91,11 @@ section div ul {
 
 section div ul li {
     margin-right: 15px;
+    transition: transform .3s;
+}
+
+section div ul li:hover {
+    transform: scale(1.1);
 }
 
 section div ul li img {
@@ -74,3 +103,17 @@ section div ul li img {
    height: 90px;
 }
 
+
+/*ANIMAÇÃO*/
+
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
